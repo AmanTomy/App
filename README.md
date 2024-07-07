@@ -23,5 +23,15 @@ Second make an image of the rep in Docker and then run it
 docker build -t football/rag .
 ```
 ```bash
-docker run -v "$(pwd)/data:/app/data" -p 8000:8000 --env-file .env rag
+docker run -v "$(pwd)/data:/app/data" -p 8000:8000 --env-file .env football/rag
+```
+Next make write a prompt in the prompt section based on the latest football fixtures and who won.
+```bash
+curl -X 'POST' \
+  'http://0.0.0.0:8000/v1/pw_ai_answer' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "prompt": "Your prompt"
+}'
 ```
