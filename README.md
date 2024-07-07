@@ -34,3 +34,4 @@ curl -X 'POST' \
   "prompt": "Your prompt"
 }'
 ```
+<iframe width="560" height="315" src="https://youtu.be/03Uztub_mAc" frameborder="0" allowfullscreen></iframe>
