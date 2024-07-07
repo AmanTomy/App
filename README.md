@@ -6,7 +6,6 @@ This project is designed to provide the latest football fixtures using the Sport
 ## Features
 - Fetches latest football fixtures from SportMonk API
 - Utilizes RAG pipeline for data retrieval and presentation
-- User-friendly interface to display fixtures
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
