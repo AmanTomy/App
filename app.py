@@ -5,6 +5,10 @@ import click
 import pathway as pw
 import yaml
 from dotenv import load_dotenv
+import subprocess
+
+subprocess.run(['python3', 'api.py'])
+
 
 from pathway.udfs import DiskCache, ExponentialBackoffRetryStrategy
 from pathway.xpacks.llm import embedders, llms, parsers, splitters
