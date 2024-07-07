@@ -14,3 +14,14 @@ Before you begin, ensure you have met the following requirements:
 - You have `Python` installed on your machine.
 -  Have docker installed
 ## steps to use the app
+First clone the repository
+```bash
+git clone [https://github.com/pathwaycom/llm-app.git](https://github.com/AmanTomy/App.git)
+```
+Second make an image of the rep in Docker and then run it
+```bash
+docker build -t football/rag .
+```
+```bash
+docker run -v "$(pwd)/data:/app/data" -p 8000:8000 --env-file .env rag
+```
